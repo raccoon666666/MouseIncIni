@@ -461,14 +461,14 @@
 		],
 		"Keys": "ctrl+alt+c",
 		"Name": "复制",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Execute", "global_cv", "hide"]
 		],
 		"Keys": "ctrl+alt+v",
 		"Name": "粘贴",
-		"Valid": true
+		"Valid": false
 	}],
 	"IgnoreFullScreen": false,
 	"KeySound": false,
@@ -746,9 +746,9 @@
 			"Valid": true
 		}, {
 			"Actions": [
-				["SendKeys", "Alt+Insert"]
+				["SendKeys", "ctrl+shift+Delete"]
 			],
-			"Name": "生成",
+			"Name": "解除块",
 			"Sign": "下2上",
 			"Valid": true
 		}, {
@@ -801,12 +801,12 @@
 			"Sign": "右2下",
 			"Valid": true
 		}, {
-			"Valid": true,
-			"Sign": "右下",
-			"Name": "智能选取",
 			"Actions": [
-				["SendKeys", "Ctrl+W"]
-			]
+				["SendKeys", "Alt+Insert"]
+			],
+			"Name": "生成",
+			"Sign": "右下",
+			"Valid": true
 		}],
 		"Match": ["Idea64.exe", "pycharm64.exe", "studio64.exe", "hbuilderx.exe", "webstorm64.exe", "clion64.exe"],
 		"Name": "IntelliJ"
@@ -913,6 +913,27 @@
 			],
 			"Name": "全部打开",
 			"Sign": "下2右2下",
+			"Valid": true
+		}, {
+			"Actions": [
+				["SendKeys", "ctrl+w"]
+			],
+			"Name": "关闭文件",
+			"Sign": "下2左",
+			"Valid": true
+		}, {
+			"Actions": [
+				["SendKeys", "ctrl+tab"]
+			],
+			"Name": "下一个",
+			"Sign": "右",
+			"Valid": true
+		}, {
+			"Actions": [
+				["SendKeys", "ctrl+shift+tab"]
+			],
+			"Name": "上一个",
+			"Sign": "左",
 			"Valid": true
 		}],
 		"Match": ["code.exe"],
