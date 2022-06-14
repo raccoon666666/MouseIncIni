@@ -826,6 +826,44 @@
 			"Name": "下一个文档",
 			"Sign": "右",
 			"Valid": true
+		}, {
+			"Actions": [
+				["SendKeys", "Backspace"],
+				["SendKeys", ","],
+				["SendKeys", "Home"],
+				["SendKeys", "Backspace"],
+				["SendKeys", ","],
+				["SendKeys", "Home"],
+				["SendKeys", "Backspace"],
+				["SendKeys", ","],
+				["SendKeys", "Home"],
+				["SendKeys", "Backspace"],
+				["SendKeys", ","],
+				["SendKeys", "Home"],
+				["SendKeys", "Backspace"],
+				["SendKeys", ","],
+				["SendKeys", "Home"]
+			],
+			"Name": "5",
+			"Sign": "右下",
+			"Valid": true
+		}, {
+			"Actions": [
+				["SendKeys", "Backspace"],
+				["SendKeys", ","],
+				["SendKeys", "Home"]
+			],
+			"Name": "1",
+			"Sign": "左上",
+			"Valid": true
+		}, {
+			"Valid": true,
+			"Sign": "下",
+			"Name": "加粗",
+			"Actions": [
+				["SendKeys", "ctrl+b"],
+				["SendKeys", "ctrl+i"]
+			]
 		}],
 		"Match": ["wpp.exe", "wps.exe"],
 		"Name": "WPS"
