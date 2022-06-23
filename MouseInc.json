@@ -857,13 +857,13 @@
 			"Sign": "左上",
 			"Valid": true
 		}, {
-			"Valid": true,
-			"Sign": "下",
-			"Name": "加粗",
 			"Actions": [
 				["SendKeys", "ctrl+b"],
 				["SendKeys", "ctrl+i"]
-			]
+			],
+			"Name": "加粗",
+			"Sign": "下",
+			"Valid": true
 		}],
 		"Match": ["wpp.exe", "wps.exe"],
 		"Name": "WPS"
@@ -976,6 +976,18 @@
 		}],
 		"Match": ["code.exe"],
 		"Name": "VsCode"
+	}, {
+		"IgnoreGlobal": false,
+		"List": [{
+			"Actions": [
+				["SendKeys", "F2"]
+			],
+			"Name": "重命名",
+			"Sign": "右下",
+			"Valid": true
+		}],
+		"Match": ["explorer.exe"],
+		"Name": "Explorer"
 	}],
 	"MatchGlobal": [{
 		"Actions": [
