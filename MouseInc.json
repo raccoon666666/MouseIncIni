@@ -865,7 +865,7 @@
 			"Sign": "下",
 			"Valid": true
 		}],
-		"Match": ["wpp.exe", "wps.exe"],
+		"Match": ["wpp.exe", "wps.exe", "et.exe"],
 		"Name": "WPS"
 	}, {
 		"IgnoreGlobal": false,
@@ -1083,13 +1083,6 @@
 		"Valid": true
 	}, {
 		"Actions": [
-			["SendKeys", "F5"]
-		],
-		"Name": "运行",
-		"Sign": "R",
-		"Valid": false
-	}, {
-		"Actions": [
 			["Snapshot", "PiP"]
 		],
 		"Name": "画中画",
@@ -1104,7 +1097,7 @@
 		"Valid": true
 	}, {
 		"Actions": [
-			["Execute", "explorer D:\\桌面\\MouseInc.txt"]
+			["Execute", "explorer D:\\桌面\\MouseInc.md"]
 		],
 		"Name": "帮助",
 		"Sign": "h",
@@ -1115,12 +1108,12 @@
 		],
 		"Name": "切换网络",
 		"Sign": "右下",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
-			["SendKeys", "shift+F10"]
+			["SendKeys", "ctrl+shift+esc"]
 		],
-		"Name": "运行",
+		"Name": "活动管理器",
 		"Sign": "左上",
 		"Valid": true
 	}, {
@@ -1167,11 +1160,25 @@
 		"Valid": true
 	}, {
 		"Actions": [
-			["SendKeys", "win+shift+Q"]
+			["Window", "Top"]
 		],
 		"Name": "固定",
 		"Sign": "右2上",
 		"Valid": true
+	}, {
+		"Actions": [
+			["Window", "ToggleTray"]
+		],
+		"Name": "隐藏",
+		"Sign": "右下",
+		"Valid": true
+	}, {
+		"Actions": [
+			["MouseMove", "0", "0"]
+		],
+		"Name": "Dev",
+		"Sign": "右2上",
+		"Valid": false
 	}],
 	"MouseGesture": {
 		"AddMode": false,
