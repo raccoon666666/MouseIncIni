@@ -1179,6 +1179,13 @@
 		"Name": "Dev",
 		"Sign": "右2上",
 		"Valid": false
+	}, {
+		"Actions": [
+			["Execute", "position %filepath%"]
+		],
+		"Name": "打开程序位置",
+		"Sign": "上",
+		"Valid": true
 	}],
 	"MouseGesture": {
 		"AddMode": false,
